@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     position: relative;
     padding:0px;
@@ -36,6 +39,10 @@ body{
 .topBar .right li{
     display: inline;
 }
+.page::before{
+    
+  scroll-snap-type: mandatory;
+}
 .page{
     position: relative;
     top: 0;
@@ -47,6 +54,7 @@ body{
     height: 100%;
     overflow: hidden;
     background-color: beige;
+    scroll-snap-align: start;
 }
 .page .image{    
     background-image: url("../assets/images/aboutme.jpg"); 
