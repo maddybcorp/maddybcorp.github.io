@@ -68,6 +68,7 @@ body{
     top: 50%;
     left:30%;
     width: 40rem;
+    overflow: hidden;
     max-width: 40%;
     max-height: 40%;
     transform: translate(-50% ,-50%);
@@ -119,12 +120,12 @@ body{
 
 
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-device-width: 1060px) {
     #primary { width:67%; }
     #secondary { width:30%; margin-left:3%;}  
 }
 /* Tabled Portrait */
-@media screen and (max-width: 768px) {
+@media screen and (max-device-width: 768px) {
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
@@ -137,7 +138,7 @@ body{
 }
 .intro{
     left: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
     color: black;
 }
 }  
@@ -145,6 +146,7 @@ body{
     :root{
         font-size: 16px;
     }
+
     
 } 
 @media only screen and (min-device-width: 768px) { 
